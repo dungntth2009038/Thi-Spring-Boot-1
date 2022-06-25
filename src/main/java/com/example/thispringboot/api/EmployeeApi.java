@@ -27,7 +27,7 @@ public class EmployeeApi {
         if (!employee.isPresent()) {
             ResponseEntity.badRequest().build();// khoong co du lieu tra ve
         }
-        return ResponseEntity.ok(employee.get());//cos du lieu tra ve
+        return ResponseEntity.ok(employee.get());//co du lieu tra ve
     }
 
     @RequestMapping(method = RequestMethod.POST)
